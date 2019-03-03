@@ -1,3 +1,4 @@
+import { FileItem } from './../models/file-item';
 import { Injectable } from '@angular/core';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFirestore } from '@angular/fire/firestore';
@@ -20,5 +21,9 @@ export class CargaImagenesService {
     ) {
       this.db.collection(`/${this.CARPETA_IMAGENES}`)
       .add(imagen);
+    }
+
+    cargarImagenesFirebase(imagenes: FileItem[]) {
+        console.log(imagenes);
     }
 }
