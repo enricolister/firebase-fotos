@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class CargaComponent {
 
+  estaSobreElemento: boolean = false;
+
   archivos: FileItem[] = [];
 
   constructor(public _cargaImagenes: CargaImagenesService ) { }

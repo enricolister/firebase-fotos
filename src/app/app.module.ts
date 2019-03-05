@@ -12,12 +12,14 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
+import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FotosComponent,
-    CargaComponent
+    CargaComponent,
+    NgDropFilesDirective
   ],
   imports: [
     BrowserModule,
