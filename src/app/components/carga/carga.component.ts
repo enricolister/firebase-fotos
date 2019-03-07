@@ -19,4 +19,8 @@ export class CargaComponent {
     this._cargaImagenes.cargarImagenesFirebase(this.archivos);
   }
 
+  limiparArchivos() {
+    this.archivos = [];
+  }
+
 }
